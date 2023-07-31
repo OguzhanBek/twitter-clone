@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-signin-client_id"
+      content="479839349729-bsed827s9n5fp9b7r9lnlad89t3af9a7.apps.googleusercontent.com"
+    />
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .col-3 i {
+        margin-bottom: 1.5rem;
+        font-size: 24px;
+        border-radius: 20px;
+      }
+
+      .col-3 i:hover {
+        background-color: rgb(211, 207, 207);
+        transition: 0.4s;
+      }
+
+      .col-3 i p {
+        display: inline-block;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding-left: 20px;
+      }
+
+      .trend {
+        height: 50rem;
+        width: 30rem;
+        border: 1px solid;
+
+        border-radius: 15px;
+        background-color: rgb(247, 247, 247);
+        border: none;
+      }
+
+      .trendclass:hover {
+        background-color: rgb(211, 207, 207);
+        transition: 0.4s;
+      }
+
+      .trend1:hover,
+      .trend2:hover,
+      .trend3:hover {
+        background-color: rgb(211, 207, 207);
+        transition: 0.4s;
+      }
+
+      .foryou button:hover {
+        transition: 0.4s;
+        background-color: rgb(214, 208, 208);
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: white;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: white;
+      }
+
+      ::-webkit-scrollbar {
+        width: 1px;
+      }
+
+      ::-webkit-scrollbar-track:hover {
+        background-color: white;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: white;
+      }
+    </style>
+  </head>
+
+  <body
+    data-new-gr-c-s-check-loaded="14.1115.0"
+    data-gr-ext-installed=""
+    data-new-gr-c-s-loaded="14.1115.0"
+  >
+    <div id="root">
+      <div
+        class="w-full flex-col md:flex-row max-w-[1180px] m-auto flex shrink-0 md:h-screen md:overflow-hidden"
+      >
+        <div
+          class="md:w-[240px] w-full p-2 shrink-0 md:bg-transparent bg-white md:flex relative flex-col items-start md:mt-14 mt-0 z-50 justify-between md:h-screen"
+        >
+          <div class="w-full ">
+            <div class="flex flex-row justify-between">
+              <i class="fa-brands fa-twitter fa-2x"></i>
+              <button id="menuButton" class="flex md:hidden ">
+                <i class="fa-solid fa-bars fa-2x"></i>
+              </button>
+            </div>
+
+            <div
+              id="menu"
+              class="hidden md:flex flex-col"
+            >
+              <div class="mt-5">
+                <a
+                  aria-current="page"
+                  class="flex flex-row bg-white hover:bg-slate-200 transition-all px-6 py-2 rounded-full items-center mb-2 active"
+                  href="/"
+                  ><i class="fa-solid fa-house"></i
+                  ><span class="ml-2 font-semibold text-lg">Anasayfa</span></a
+                ><a
+                  aria-current="page"
+                  class="flex flex-row bg-white hover:bg-slate-200 transition-all px-6 py-2 rounded-full items-center mb-2 active"
+                  href="/"
+                  ><i class="fa-solid fa-compass"></i
+                  ><span class="ml-2 font-semibold text-lg">Keşfet</span></a
+                ><a
+                  aria-current="page"
+                  class="flex flex-row bg-white hover:bg-slate-200 transition-all px-6 py-2 rounded-full items-center mb-2 active"
+                  href="/"
+                  ><i class="fa-regular fa-bell"></i
+                  ><span class="ml-2 font-semibold text-lg">Bildirim</span></a
+                ><a
+                  aria-current="page"
+                  class="flex flex-row bg-white hover:bg-slate-200 transition-all px-6 py-2 rounded-full items-center mb-2 active"
+                  href="/"
+                  ><i class="fa-regular fa-envelope"></i
+                  ><span class="ml-2 font-semibold text-lg">Mesajlar</span></a
+                ><a
+                  aria-current="page"
+                  class="flex flex-row bg-white hover:bg-slate-200 transition-all px-6 py-2 rounded-full items-center mb-2 active"
+                  href="/"
+                  ><i class="fa-solid fa-list"></i
+                  ><span class="ml-2 font-semibold text-lg">Listeler</span></a
+                ><a
+                  aria-current="page"
+                  class="flex flex-row bg-white hover:bg-slate-200 transition-all px-6 py-2 rounded-full items-center mb-2 active"
+                  href="/"
+                  ><i class="fa-regular fa-bookmark"></i
+                  ><span class="ml-2 font-semibold text-lg"
+                    >Yer İşaretleri</span
+                  ></a
+                ><a
+                  aria-current="page"
+                  class="flex flex-row bg-white hover:bg-slate-200 transition-all px-6 py-2 rounded-full items-center mb-2 active"
+                  href="/"
+                  ><i class="fa-regular fa-circle-check"></i
+                  ><span class="ml-2 font-semibold text-lg">Onaylanmış</span></a
+                ><a
+                  aria-current="page"
+                  class="flex flex-row bg-white hover:bg-slate-200 transition-all px-6 py-2 rounded-full items-center mb-2 active"
+                  href="/"
+                >
+                  <i class="fa-regular fa-user"></i
+                  ><span class="ml-2 font-semibold text-lg">Profil</span> </a
+                ><a
+                  aria-current="page"
+                  class="flex flex-row bg-white hover:bg-slate-200 transition-all px-6 py-2 rounded-full items-center mb-2 active"
+                  href="/"
+                  ><i class="fa-solid fa-ellipsis"></i
+                  ><span class="ml-2 font-semibold text-lg">Daha Fazla</span></a
+                >
+              </div>
+              <button
+                class="bg-blue-500 block w-full text-white rounded-full font-semibold text-center py-2 hover:bg-blue-600"
+              >
+                Twitter
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-center w-full py-2 bg-white rounded-full hover:bg-[#f7f9f9] px-2"
+          >
+            <button>
+              <img src="assets/img/BEN.jpeg" class="w-10 h-10 rounded-full" alt="" />
+            </button>
+            <div class="flex flex-col ml-2 justify-center flex-1 w-full">
+              <span class="font-semibold"
+                ><button>Oğuzhan Umut Bek</button></span
+              ><span class="font-medium text-xs text-gray-500"
+                ><button>@Oğuzhan</button></span
+              >
+            </div>
+            <button><i class="fa-solid fa-ellipsis"></i></button>
+          </div>
+        </div>
+        <main
+          class="flex flex-1 w-full shrink-0 md:px-5 px-2 md:mt-14 mt-0 md:h-screen md:overflow-y-scroll"
+        >
+          <div class="pt-3 w-full border border-[#eff3f4]">
+            <div>
+              <h1 class="font-bold text-xl"><button>Anasayfa</button></h1>
+            </div>
+            <div
+              class="flex flex-row items-center justify-around w-full p-5 space-x-4"
+            >
+              <div class="flex flex-col items-center relative">
+                <button class="font-semibold">Sana Özel</button>
+                <div
+                  class="w-8 h-1 bg-blue-500 rounded-full absolute -bottom-2"
+                ></div>
+              </div>
+              <div class="flex flex-col items-center relative">
+                <button class="font-semibold">Takip Edilenler</button>
+              </div>
+            </div>
+            <div class="border border-[#eff3f4] w-full flex flex-col p-5">
+              <div class="flex flex-row">
+                <img src="assets/img/Ahmad.png" class="w-10 h-10 rounded-full" alt="" />
+                <div class="w-full flex-row">
+                  <div class="flex flex-row">
+                    <div
+                      class="space-x-[1px] text-blue-500 items-center flex px-1 ml-3 border border-blue-500 rounded-full"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="earth-americas"
+                        class="svg-inline--fa fa-earth-americas fa-xs"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                        ></path></svg
+                      ><span class="font-semibold text-sm">Herkes</span
+                      ><svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="angle-down"
+                        class="svg-inline--fa fa-angle-down fa-xs"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <textarea
+                    name=""
+                    id=""
+                    cols="50"
+                    rows="6"
+                    class="flex flex-1 w-full outline-none pl-5 text-lg"
+                    placeholder="Neler Oluyor Hayatta!"
+                    spellcheck="false"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between mt-2 items-center">
+                <div>
+                  <button
+                    class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors undefined"
+                  >
+                    <i class="fa-regular fa-image"></i></button
+                  ><button
+                    class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors undefined"
+                  >
+                    <i class="fa-solid fa-gift"></i></button
+                  ><button
+                    class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors undefined"
+                  >
+                    <i class="fa-solid fa-list"></i></button
+                  ><button
+                    class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors undefined"
+                  >
+                    <i class="fa-regular fa-face-smile"></i></button
+                  ><button
+                    class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors undefined"
+                  >
+                    <i class="fa-regular fa-calendar"></i></button
+                  ><button
+                    class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors undefined"
+                  >
+                    <i class="fa-solid fa-location-pin"></i>
+                  </button>
+                </div>
+                <button
+                  class="text-lg text-white bg-blue-500 text-center px-4 rounded-full"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+            <div class="border-b border-[#eff3f4]">
+              <div class="flex flex-row p-5">
+                <img src="assets/img/BEN.jpeg" class="w-10 h-10 rounded-full" alt="" />
+                <div class="flex flex-col ml-2">
+                  <span class="font-bold text-sm"
+                    >Oğuzhan Umut Bek
+                    <span class="font-semibold text-zinc-900"
+                      >@oguzhan</span
+                    ></span
+                  >
+                  <p>lorem</p>
+                  <img
+                    src="https://pbs.twimg.com/media/F10AlFzXsAAd0JO?format=jpg&amp;name=medium"
+                    alt=""
+                    class="w-full h-[280px] object-cover rounded-sm"
+                  />
+                  <div class="flex flex-row justify-between mt-5 w-full">
+                    <button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-regular fa-comment"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      ></button
+                    ><button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-solid fa-rotate-left"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      ></button
+                    ><button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      ></button
+                    ><button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-solid fa-chart-simple"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      ></button
+                    ><button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-solid fa-share-from-square"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-row p-5">
+                <img src="assets/img/BEN.jpeg" class="w-10 h-10 rounded-full" alt="" />
+                <div class="flex flex-col ml-2">
+                  <span class="font-bold text-sm"
+                    >Oğuzhan Umut Bek
+                    <span class="font-semibold text-zinc-900"
+                      >@oguzhan</span
+                    ></span
+                  >
+                  <p>lorem</p>
+                  <video
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                    class="w-full h-[280px] object-cover rounded-sm"
+                    controls=""
+                  ></video>
+                  <div class="flex flex-row justify-between mt-5 w-full">
+                    <button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-regular fa-comment"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      ></button
+                    ><button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-solid fa-rotate-left"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      ></button
+                    ><button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      ></button
+                    ><button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-solid fa-chart-simple"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      ></button
+                    ><button
+                      class="w-8 h-8 rounded-full hover:bg-blue-400/50 transition-colors flex flex-row hover:bg-white"
+                    >
+                      <i class="fa-solid fa-share-from-square"></i
+                      ><span class="text-xs ml-1 text-zinc-700 font-semibold"
+                        >229</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div
+          class="md:w-[380px] w-full md:overflow-y-scroll p-5 shrink-0 md:bg-transparent bg-white flex flex-col items-start md:mt-0 mt-14 md:h-screen space-y-5"
+        >
+          <div class="w-full flex items-center relative">
+            <i class="fa-solid fa-magnifying-glass"></i
+            ><input
+              type="text"
+              placeholder="Search on Twitter"
+              class="bg-[#eff3f4] w-full outline-none rounded-full pl-8 px-4 py-2"
+            />
+          </div>
+          <div class="p-5 bg-[#f7f9f9] w-full rounded-lg">
+            <h2 class="font-bold text-lg">Onaylanmış Hesap Sahibi Ol</h2>
+            <h2 class="font-semibold text-base">
+              Yeni özelliklerden yararlanmak için abone ol.
+            </h2>
+            <button
+              class="bg-black text-white p-2 px-4 rounded-full mt-2 font-semibold"
+            >
+              Onaylanmış Hesap Sahibi Ol
+            </button>
+          </div>
+          <div class="bg-[#f7f9f9] w-full rounded-lg">
+            <div class="p-5">
+              <h2 class="font-bold text-lg">İlgini çekebilecek gündemler</h2>
+              <h2 class="font-semibold text-base">
+                Yeni özelliklerden yararlanmak için abone ol.
+              </h2>
+            </div>
+            <div
+              class="flex flex-row items-center hover:bg-[#eff1f1] p-4 bg-[#f7f9f9]"
+            >
+              <div class="w-full flex flex-col">
+                <span class="text-xs">Gündemdekiler</span
+                ><span class="font-semibold">Tuta</span
+                ><span class="text-xs">23M Tweet</span>
+              </div>
+              <button><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+            <div
+              class="flex flex-row items-center hover:bg-[#eff1f1] p-4 bg-[#f7f9f9]"
+            >
+              <div class="w-full flex flex-col">
+                <span class="text-xs">Gündemdekiler</span
+                ><span class="font-semibold">Putin ve Rusya</span
+                ><span class="text-xs">233M Tweet</span>
+              </div>
+              <button><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+            <div
+              class="flex flex-row items-center hover:bg-[#eff1f1] p-4 bg-[#f7f9f9]"
+            >
+              <div class="w-full flex flex-col">
+                <span class="text-xs">Gündemdekiler</span
+                ><span class="font-semibold">Hitit'te yeni günler başlıyor</span
+                ><span class="text-xs">993M Tweet</span>
+              </div>
+              <button><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+          </div>
+          <div class="p-5 bg-[#f7f9f9] w-full rounded-lg">
+            <h2 class="font-bold text-lg">Kimi takip etmeli</h2>
+            <div class="flex flex-row items-center mb-2">
+              <img
+                src="assets/img/Mehmet Tarcan.png"
+                class="w-10 h-10 rounded-full"
+                alt=""
+              />
+              <div class="flex flex-col px-2 flex-1">
+                <h2 class="text-base">Mehmet Tarcan</h2>
+                <span class="text-sm text-zinc-600">@Tarcan</span>
+              </div>
+              <div>
+                <button
+                  class="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-700 transition-all"
+                >
+                  Takip Et
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-row items-center mb-2">
+              <img
+                src="https://pbs.twimg.com/profile_images/1683407474836008960/jeefb7F9_400x400.jpg"
+                class="w-10 h-10 rounded-full"
+                alt=""
+              />
+              <div class="flex flex-col px-2 flex-1">
+                <h2 class="text-base">İş Adamı Bora</h2>
+                <span class="text-sm text-zinc-600">@isAdamıBora</span>
+              </div>
+              <div>
+                <button
+                  class="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-700 transition-all"
+                >
+                  Takip Et
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-row items-center mb-2">
+              <img src="assets/img/Ahmad.png" class="w-10 h-10 rounded-full" alt="" />
+              <div class="flex flex-col px-2 flex-1">
+                <h2 class="text-base">Ahmad Alhasani</h2>
+                <span class="text-sm text-zinc-600">Tuta</span>
+              </div>
+              <div>
+                <button
+                  class="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-700 transition-all"
+                >
+                  Takip Et
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-row items-center mb-2">
+              <img
+                src="https://pbs.twimg.com/profile_images/994592419705274369/RLplF55e_400x400.jpg"
+                class="w-10 h-10 rounded-full"
+                alt=""
+              />
+              <div class="flex flex-col px-2 flex-1">
+                <h2 class="text-base">MrBeast</h2>
+                <span class="text-sm text-zinc-600">@MrBeast</span>
+              </div>
+              <div>
+                <button
+                  class="bg-black text-white py-1 px-4 rounded-full hover:bg-gray-700 transition-all"
+                >
+                  Takip Et
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#menuButton").click(function () {
+        $("#menu").toggleClass("hidden")
+      });
+    </script>
+  </body>
+</html>
